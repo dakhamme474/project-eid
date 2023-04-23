@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Carlito', sans-serif;
-    
+
 }
 
 /* navbar */
@@ -47,14 +49,35 @@ header {
     padding: 7px;
 }
 
+@media (min-width : 375px) and (max-width : 426px) {
+    header {
+        background-color: black;
+        width: 100%;
+        height: 110px;
+        display: flex;
+    }
+
+    .logo {
+        width: 100%;
+        height: 110px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .photo {
+        display: none;
+    }
+}
+
 /* section-1 */
 .sec-1 {
     background-color: rgb(65, 67, 83);
     width: 100%;
     height: 230px;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-
 .pack {
     width: 30%;
     height: 230px;
@@ -66,8 +89,6 @@ header {
 .texto {
     width: 50%;
     text-align: center;
-    margin-top: 60px;
-
 }
 
 .texto h1 {
@@ -81,233 +102,576 @@ header {
     font-size: 30px;
     font-weight: 200;
 }
+@media (min-width : 375px) and (max-width : 426px) {
+    .sec-1 { 
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .texto {
+        width: 100%;
+        text-align: center;
+    }
+    .texto h1 {
+        color: white;
+        font-size: 40px;
+        font-weight: 200;
+        padding-top: 10px;
+    }
+    .texto h3 {
+        color: white;
+        font-size: 20px;
+        font-weight: 200;
+        padding:  10px 0;
+    }
+}
+
 /* section2 */
-.sec-2{
+.sec-2 {
     width: 100%;
     height: 400px;
 }
-.btn1{
+.btn1 {
     display: flex;
     justify-content: center;
 }
-.btn1 button{
-   background-color: rgb(65, 67, 83);
-   color: white; 
-   width: 270px;
+
+.btn1 button {
+    background-color: rgb(65, 67, 83);
+    color: white;
+    width: 270px;
     height: 75px;
     border-style: none;
     font-size: 40px;
-   margin-top: 40px;
+    margin-top: 40px;
 }
-.eclosion{
+
+.eclosion {
     width: 30%;
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 }
-.texto2{
+
+.texto2 {
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.texto2 p{
+
+.texto2 p {
     width: 490px;
     font-size: 19px;
 }
-.mother-ecl{
+
+.mother-ecl {
     display: flex;
 
 }
+@media (min-width : 375px) and (max-width : 426px) {
+    .sec-2 {
+        width: 100%;
+        height: auto;
+    }
+    .btn1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn1 button {
+        background-color: rgb(65, 67, 83);
+        color: white;
+        width: 270px;
+        height: 75px;
+        border-style: none;
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    .mother-ecl {
+       display: block;
+       justify-content: center;
+    
+    }
+    .eclosion {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+    }
+    
+    .texto2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    .texto2 p {
+        width: 390px;
+        font-size: 19px;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
 /* section3 */
-.sec-3{
+.sec-3 {
     background-color: beige;
     width: 100%;
     height: 230px;
-
 }
-.logo-sec3{
+
+.logo-sec3 {
     display: flex;
     justify-content: space-evenly;
-   
+
 }
-.logo-sec3 img{
-    width:100px;
+
+.logo-sec3 img {
+    width: 100px;
     margin-top: 42px;
 }
-.logo-sec3 p{
+
+.logo-sec3 p {
     text-align: center;
-    padding:  15px 0 ;
+    padding: 15px 0;
 }
+@media (min-width : 375px) and (max-width : 426px) {
+    .sec-3 {
+        background-color: beige;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo-sec3 {
+        flex-direction: column;
+        
+        
+    
+    }
+    
+    .logo-sec3 img {
+        width: 120px;
+        margin-top: 42px;
+    }
+    
+    .logo-sec3 p {
+        text-align: center;
+        padding: 15px 0;
+    }
+}
+
 /* section4 */
-.sec-4{
+.sec-4 {
     width: 100%;
     height: 400px;
     margin-top: 50px;
 }
-.btn2{
+
+.btn2 {
     display: flex;
     justify-content: center;
 }
-.btn2 button{
-   background-color: rgb(65, 67, 83);
-   color: white; 
-   width: 270px;
+
+.btn2 button {
+    background-color: rgb(65, 67, 83);
+    color: white;
+    width: 270px;
     height: 75px;
     border-style: none;
     font-size: 40px;
-   margin-top: 40px;
+    margin-top: 40px;
 }
-.evolution{
+
+.evolution {
     width: 30%;
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 }
-.texto3{
+
+.texto3 {
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.texto3 p{
+
+.texto3 p {
     width: 490px;
     font-size: 19px;
 }
-.mother-evo{
+
+.mother-evo {
     display: flex;
 
 }
+@media (min-width : 375px) and (max-width : 426px) {
+    .sec-4 {
+        width: 100%;
+        height: auto;
+    }
+    .btn2 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn2 button {
+        background-color: rgb(65, 67, 83);
+        color: white;
+        width: 270px;
+        height: 75px;
+        border-style: none;
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    .mother-evo {
+       display: block;
+       justify-content: center;
+    
+    }
+    .evolution {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+    }
+    
+    .texto3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    .texto3 p {
+        width: 390px;
+        font-size: 19px;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
 /* section5 */
-.sec-5{
+.sec-5 {
     background-color: beige;
     width: 100%;
     height: 380px;
 
 }
-.logo-sec5{
+
+.logo-sec5 {
     display: flex;
     justify-content: space-evenly;
-   
+
 }
-.logo-sec5 img{
-    width:100px;
+
+.logo-sec5 img {
+    width: 100px;
     margin-top: 42px;
 }
-.logo-sec5 p{
+
+.logo-sec5 p {
     text-align: center;
-    padding:  15px 0 ;
+    padding: 15px 0;
 }
-.logo-alon{
+
+.logo-alon {
     display: flex;
     justify-content: center;
 }
-.logo-alon img{
-    width:100px;
+
+.logo-alon img {
+    width: 100px;
 }
-.visite{
+
+.visite {
     text-align: center;
-    padding:  15px 0 ;
+    padding: 15px 0;
+}
+@media (min-width : 375px) and (max-width : 426px) {
+    .sec-5 {
+        background-color: beige;
+        width: 100%;
+        height: auto;
+    
+    }
+    .media{
+        display: flex;
+        justify-content: center;
+    }
+    .logo-sec5 {
+       flex-direction: column;
+    
+    }
+    
+    .logo-sec5 img {
+        width: 100px;
+        margin-top: 42px;
+    }
+    
+    .logo-sec5 p {
+        text-align: center;
+        padding: 15px 0;
+    }
+    
+    .logo-alon {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo-alon img {
+        width: 100px;
+    }
+    
+    .visite {
+        text-align: center;
+        padding: 15px 0;
+    }
 }
 /* section6 */
-.sec-6{
+.sec-6 {
     width: 100%;
     height: 400px;
     margin-top: 50px;
 }
-.btn3{
+
+.btn3 {
     display: flex;
     justify-content: center;
 }
-.btn3 button{
-   background-color: rgb(65, 67, 83);
-   color: white; 
-   width: 270px;
+
+.btn3 button {
+    background-color: rgb(65, 67, 83);
+    color: white;
+    width: 270px;
     height: 75px;
     border-style: none;
     font-size: 40px;
-   margin-top: 40px;
+    margin-top: 40px;
 }
-.envol{
+
+.envol {
     width: 30%;
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 }
-.texto4{
+
+.texto4 {
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.texto4 p{
+
+.texto4 p {
     width: 490px;
     font-size: 19px;
 }
-.mother-envol{
+
+.mother-envol {
     display: flex;
 
 }
+@media (min-width : 375px) and (max-width : 426px) {
+    .sec-6 {
+        width: 100%;
+        height: auto;
+    }
+    .btn3 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn3 button {
+        background-color: rgb(65, 67, 83);
+        color: white;
+        width: 270px;
+        height: 75px;
+        border-style: none;
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    .mother-envol {
+       display: block;
+       justify-content: center;
+    
+    }
+    .envol {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+    }
+    
+    .texto4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    .texto4 p {
+        width: 390px;
+        font-size: 19px;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
 /* section7 */
-.sec-7{
+.sec-7 {
     background-color: beige;
     width: 100%;
     height: 230px;
 
 }
-.logo-sec7{
+
+.logo-sec7 {
     display: flex;
     justify-content: space-evenly;
-   
+
 }
-.logo-sec7 img{
-    width:100px;
+
+.logo-sec7 img {
+    width: 100px;
     margin-top: 42px;
 }
-.logo-sec7 p{
+
+.logo-sec7 p {
     text-align: center;
-    padding:  15px 0 ;
+    padding: 15px 0;
+}
+@media (min-width : 375px) and (max-width : 426px) {
+    .sec-7 {
+        background-color: beige;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo-sec7 {
+        flex-direction: column;
+        
+        
+    
+    }
+    
+    .logo-sec7 img {
+        width: 120px;
+        margin-top: 42px;
+    }
+    
+    .logo-sec7 p {
+        text-align: center;
+        padding: 15px 0;
+    }
 }
 /* footer */
-footer{
+footer {
     width: 100%;
     height: 250px;
     background-color: rgb(44, 42, 42);
 }
-.ft-txt{
+.ft-txt {
     display: flex;
     justify-content: space-around;
-    
+}
 
-}
-.ft-txt h1{
+.ft-txt h1 {
     color: white;
-    padding:45px 0;
+    padding: 45px 0;
 }
-.all-icones{
+
+.all-icones {
     display: flex;
 }
-.icone-footer1{
+
+.icone-footer1 {
     width: 33vw;
     display: flex;
     justify-content: center;
 }
-.icone-footer1 img{
+
+.icone-footer1 img {
     width: 60px;
-    padding: 0 12px ;
+    padding: 0 12px;
 }
-.icone-footer2{
+
+.icone-footer2 {
     width: 33vw;
     display: flex;
     justify-content: center;
 }
-.icone-footer2 img{
+
+.icone-footer2 img {
     width: 60px;
-    padding: 0 12px ;
+    padding: 0 12px;
 }
-.icone-footer3{
+
+.icone-footer3 {
     width: 25vw;
     display: flex;
     justify-content: center;
 }
-.icone-footer3 img{
+
+.icone-footer3 img {
     width: 60px;
-    padding: 0 12px ;
+    padding: 0 12px;
+}
+@media (min-width : 375px) and (max-width : 426px) {
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: rgb(44, 42, 42);
+    }
+    .ft-txt {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .ft-txt h1 {
+        color: white;
+        padding: 45px 0;
+    }
+    
+    .all-icones {
+        display: flex;
+    }
+    
+    .icone-footer1 {
+        width: 33vw;
+      flex-direction: column;
+    }
+    
+    .icone-footer1 img {
+        width: 60px;
+        padding: 12px ;
+    }
+    
+    .icone-footer2 {
+        width: 33vw;
+       flex-direction: column;
+    }
+    
+    .icone-footer2 img {
+        width: 60px;
+        padding:  12px ;
+    }
+    
+    .icone-footer3 {
+        width: 25vw;
+       flex-direction: column;
+    }
+    
+    .icone-footer3 img {
+        width: 60px;
+        padding:  12px ;
+    }
 }
